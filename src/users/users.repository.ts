@@ -18,4 +18,17 @@ export class UsersRepository {
       return Promise.reject(error);
     }
   }
+
+  async findOne(username: string) {
+    try {
+      return await this.users.findOne({ username: username });
+    } catch (error) {
+      console.error(error);
+      return Promise.reject(error);
+    }
+  }
+
+  async dropCollection() {
+    await this.users.collection.drop();
+  }
 }

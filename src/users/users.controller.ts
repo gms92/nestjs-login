@@ -8,7 +8,11 @@ export class UsersController {
 
   @Post()
   async create(@Body() user: User) {
-    const resp = await this.userService.create(user);
-    console.log(resp);
+    const response: User = await this.userService.create(user);
+    return {
+      description: 'created user with success',
+      username: response.username,
+      id: response._id.toString(),
+    };
   }
 }
