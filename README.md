@@ -1,4 +1,4 @@
-## Login system using Nest.JS, JWT Authentication, Bcrypt as Hasher-Password and MongoDB to store credentials
+## Login system using Nest.JS tools, JWT Authentication, Bcrypt as Hasher-Password and MongoDB to store credentials
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
